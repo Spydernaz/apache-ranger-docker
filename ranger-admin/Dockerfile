@@ -9,7 +9,7 @@ ENV RANGER_HOME=/opt/ranger-${RANGER_VERSION}-admin
 ENV passwd=security
 
 
-COPY binary/ranger-${RANGER_VERSION}-admin.tar.gz /opt
+ADD https://github.com/Spydernaz/apache-ranger-docker/releases/download/v2.0.0.0/ranger-2.0.0-admin.tar.gz /opt
 COPY ranger-entrypoint.sh /opt
 
 
