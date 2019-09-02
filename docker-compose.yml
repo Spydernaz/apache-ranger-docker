@@ -1,12 +1,12 @@
 version: "3"
 services:
   db:
-    image: spydernaz/docker-ranger-db:v0.5
+    image: spydernaz/docker-ranger-db:latest
     restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=password
   ranger-admin:
-    image: spydernaz/docker-ranger-admin:v0.5
+    image: spydernaz/docker-ranger-admin:latest
     stdin_open: true
     tty: true
     depends_on:
